@@ -26,6 +26,12 @@ public: // 접근할 수 있는 함수
 	string getName() const { return name; }
 	void setName(string n) { name = n; }
 
+	double getMidterm() const { return midterm; }
+	double getfinal() const { return final; }
+	vector<double> getHW() const { return homework; }
+
+
+
 	bool valid() const { return !homework.empty(); }
 
 	// 9.2.1/254p에서 정의한 함수들

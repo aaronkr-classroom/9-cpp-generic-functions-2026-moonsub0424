@@ -51,3 +51,8 @@ list<Student_info> extract_fails(list<Student_info>& students) {
     }
     return fail;
 }
+
+// grade.h 또는 grade.cpp에 이 형태의 함수가 정의되어 있어야 합니다.
+double grade(const Student_info& s) {
+    return s.grade(); // Student_info 클래스의 멤버 함수인 grade()를 호출
+}

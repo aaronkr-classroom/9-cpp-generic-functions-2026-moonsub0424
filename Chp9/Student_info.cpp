@@ -17,7 +17,7 @@ bool compare(const Student_info& x, const Student_info& y) {
 }
 
 double Student_info::grade() const {
-    return ::grade(midterm, final, homework);
+    return ::grade(getMidterm(), getfinal(), getHW());
 }
 
 // 입력 스트림에서 과제 점수를 읽어서 vector<double>에 넣음.
